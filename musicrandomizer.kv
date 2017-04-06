@@ -1,0 +1,19 @@
+BoxLayout
+    orientation: 'vertical'
+    MusicScreen
+        id: music_randomizer
+    Label
+        text: 'Music Randomizer'
+    Label
+        text: music_randomizer.song_title
+    BoxLayout
+        orientation: 'horizontal'
+        Button
+            text: 'Play/Pause'
+            on_press: music_randomizer.play_song()
+        Button
+            text: 'Skip'
+            on_press: music_randomizer.play_song()
+        Button
+            text: 'Full Play'
+            on_press: music_randomizer.play_song()
